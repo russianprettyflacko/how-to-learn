@@ -1,3 +1,7 @@
+h1, p{
+  margin: 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,19 +14,110 @@
 }
 
 .header {
+  position: relative;
+  display: flex;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  padding-left: 64px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header{
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
+  background-image: url('../images/logo_place_header.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__title {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 4;
+  width: 730px;
+}
+
+.header__subtitle{
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link{
+  color:  #2f80ed;
+}
+
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  background-color: #2f80ed;
+  right: 0;
+  top: 64px;
+  z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.description{
+  padding: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.two-columns__brief{
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+  justify-self:  space-between;
+}
+
+.two-columns__paragraph{
+  font-size: 24px;
+  line-height: 34px;
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph span{
+  font-weight: bold;
+}
+
+.two-columns__paragraph:last-child{
+  padding-bottom: 0;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
