@@ -402,19 +402,6 @@
   color: white;
 }
 
-.footer__column-links
-{
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.footer__column-link:hover
-{
-  text-decoration: underline;
-}
-
 .footer__column-heading
 {
   font-size: 18px;
@@ -429,7 +416,10 @@
 
 .footer__column-links
 {
-  margin-bottom: 16px;
+  margin: 0 0 16px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer__column-link
@@ -442,6 +432,11 @@
   text-decoration: none;
 
   color: white;
+}
+
+.footer__column-link:hover
+{
+  text-decoration: underline;
 }
 
 .footer__social-icon
