@@ -1,11 +1,3 @@
-h1,
-h2,
-h3,
-p
-{
-  margin: 0;
-}
-
 .page
 {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -40,7 +32,7 @@ p
   height: 32px;
 }
 
-.logo_place-header
+.logo_place_header
 {
   position: absolute;
   z-index: 3;
@@ -58,9 +50,10 @@ p
   font-weight: bold;
   line-height: 96px;
 
-  z-index: 4;
+  z-index: 2;
 
   width: 730px;
+  margin: 0;
 }
 
 .header__subtitle
@@ -74,17 +67,20 @@ p
   left: 64px;
 
   width: 388px;
+  margin: 0;
 }
 
 .header__link
 {
+  text-decoration: none;
+
   color: #2f80ed;
 }
 
 .header__main-illustration
 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   right: 0;
   bottom: 0;
 
@@ -109,7 +105,7 @@ p
 
 .description
 {
-  padding: 100px 0;
+  padding: 100px 0 50px;
 
   background-color: #fefefe;
 }
@@ -131,6 +127,7 @@ p
   line-height: 1.2;
 
   width: 175px;
+  margin: 0;
 
   color: #2f80ed;
 }
@@ -146,6 +143,7 @@ p
   font-size: 24px;
   line-height: 34px;
 
+  margin: 0;
   padding-bottom: 30px;
 }
 
@@ -161,7 +159,7 @@ p
 
 .digits
 {
-  padding: 100px 0;
+  padding: 50px 0 100px;
 
   background-color: #fefefe;
 }
@@ -173,7 +171,7 @@ p
   line-height: 1.15;
 
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 20px;
 
   text-align: center;
@@ -185,18 +183,20 @@ p
   line-height: 34px;
 
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
 
   text-align: center;
 }
 
 .table
 {
+  position: relative;
+  z-index: 1;
+
   display: flex;
 
   width: 1100px;
   margin: auto;
-  padding-top: 60px;
 
   flex-wrap: wrap;
   justify-content: space-between;
@@ -205,7 +205,9 @@ p
 .table__cell
 {
   width: 250px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+
+  list-style: none;
 }
 
 .table__heading
@@ -214,6 +216,7 @@ p
   font-weight: bold;
   line-height: 1.15;
 
+  margin: 0;
   padding-bottom: 20px;
 }
 
@@ -222,6 +225,7 @@ p
   font-size: 18px;
   line-height: 1.2;
 
+  margin: 0;
   padding-bottom: 20px;
 }
 
@@ -235,7 +239,7 @@ p
   position: relative;
 
   box-sizing: border-box;
-  height: 790px;
+  min-height: 790px;
   padding: 100px 0;
 
   background-color: #f1f1f1;
@@ -244,27 +248,29 @@ p
   background-position: left bottom;
 }
 
-.feiman__title
+.feinman__title
 {
   font-size: 120px;
   line-height: 1.15;
 
   width: 648px;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 70px;
 
   text-align: center;
 }
 
-.feiman__subtitle
+.feinman__subtitle
 {
   font-size: 36px;
   line-height: 51px;
 
+  margin: 0;
+
   text-align: center;
 }
 
-.feiman__link
+.feinman__link
 {
   font-size: 36px;
   line-height: 51px;
@@ -282,36 +288,56 @@ p
 
 .kaufman
 {
+  position: relative;
+
+  overflow: hidden;
+
   padding: 90px 0;
 
   background-color: #1e1e1e;
 }
 
-.section-title_theme-dark
+.section-title_theme_dark
 {
   color: white;
 }
 
-.section-subtitle_theme-dark
+.section-subtitle_theme_dark
 {
   color: white;
 }
 
-.table__cell_theme-dark
+.table__cell_theme_dark
 {
   width: 200px;
+  padding-top: 80px;
 
   color: white;
 }
 
-.table__heading_theme-dark
+.table__heading_theme_dark
 {
   color: white;
+}
+
+.kaufman__triangle
+{
+  position: absolute;
+  top: 0;
+  right: -210px;
+
+  width: 877px;
+  height: 877px;
+
+  background-image: url('../images/kaufman-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer
 {
-  padding: 60px 0;
+  padding: 60px 0 40px;
 
   background-color: #1f1f1f;
 }
@@ -326,11 +352,11 @@ p
   justify-content: space-between;
 }
 
-.footer__column_content-copyrigth
+.footer__column_content_copyrigth
 {
   display: flex;
 
-  min-height: calc(350px - 120px);
+  min-height: calc(350px - 60px - 40px);
 
   flex-basis: 711px;
   align-content: space-between;
@@ -357,18 +383,27 @@ p
   color: white;
 }
 
+.footer__column-links
+{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .footer__column-heading
 {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
 
+  margin: 0;
   padding-bottom: 20px;
 
   color: white;
 }
 
-.footer__column-links
+.footer__column-link
 {
   font-size: 18px;
   line-height: 30px;
@@ -380,7 +415,7 @@ p
   color: white;
 }
 
-.footer__column-links:last-child
+.footer__column-link:last-child
 {
   margin-bottom: 16px;
 }
