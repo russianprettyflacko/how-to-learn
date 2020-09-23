@@ -1,0 +1,27 @@
+.footer__social-icon
+{
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__social-icon_fb
+{
+  background-image: url('../../../images/facebook_color_white.svg');
+}
+
+.footer__social-icon_vk
+{
+  background-image: url('../../../images/vk_color_white.svg');
+}
+
+.footer__social-icon_ig
+{
+  background-image: url('../../../images/instagram_color_white.svg');
+}
