@@ -1,15 +1,10 @@
 .cards__item
 {
   width: 240px;
-  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.cards__item:first-child
+.cards__item:nth-child(3n)
 {
-  margin-left: 0;
-}
-
-.cards__item:nth-child(4n+4)
-{
-  margin-left: 0;
+  margin-right: 0;
 }
